@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    *{
+        padding:0;
+      margin:0;
+    }
+    body{
+        width:99%;
+        height:97%;
+        background-size:cover;
+        background-position:absolute;
+        background-image:url('https://imgs.search.brave.com/t1jj5nzhRRwn2RXAFvx3m66Vtw5Zi3xNVwqLsnfI5ZQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA3Lzc4Lzc5LzMz/LzM2MF9GXzc3ODc5/MzM3N18zcHc2VmVP/SDNKYXV5UWpoUU5G/d2haN0dGQjBHTnlY/Ni5qcGc');
+    }
+    .top{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        height:80px;
+        align-items:center;
+        padding:0px 80px;
+    }
+    .logo{
+        font-size:30px;
+        color:Black;
+    }
+    .nav{
+        position:relative;
+        left:80px;
+    }
+    a{
+        padding:3px 15px;
+        font-size:20px;
+        color:black;
+        text-decoration:none;
+    }
+    a:hover{
+        color:white;
+        text-decoration:underline;
+    }
+    .search{
+        font-size:25px;
+    }
+    .search i{
+        padding:5px 20px;
+    }
+    .heading{
+        display:flex;
+        justify-content:space-evenly;
+        padding-top:65px;
+        align-items:center;
+    }
+    .left{
+       color:black;
+       font-size:30px;
+       letter-spacing:1px;
+       font-style:italic; 
+    }
+    .left h1{
+        font-size:60px;
+        color:Black;
+     
+    }
+    .left p:nth-child(3){
+        font-style:italic;
+        color:white;
+        font-size:20px;
+    }
+    .right{
+        width:330px;
+        height:330px;
+        background-image:url('https://imgs.search.brave.com/CgWoXDFGBEqJ0UHaFHgCtph813e02x69IeHCioh6REo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/eXVtbXl0dW1teWFh/cnRoaS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDIv/Y2hpY2tlbi02NS13/aXRoLXNhdWNlLTQu/anBlZw');
+        background-size:cover;
+        border-radius:400px;
+        margin-right:120px;
+        margin-bottom:300px;
+        margin-left:300px;
+    }
+    .right::before{
+        width:330px;
+        height:330px;
+        border:2px solid white;
+        content:'';
+        position:absolute;
+        border-radius:430px;
+    }
+    button{
+        cursor:pointer;
+        background:transparent;
+        position:relative;
+        overflow:hidden;
+        width:150px;
+        padding:15px 0;
+        text-align:center;
+        margin:20px;
+        border-radius:20px;
+        border:2px solid black;
+        font-weight:bold;
+        font-style:italic;
+    }
+    span{
+        background-color:orange;
+        left:0;
+        bottom:0;
+        transition:0.5s;
+        z-index:-1;
+        height:100%;
+        position:absolute;
+        width:0;
+        border-radius:20px;
+    }
+    button:hover span{
+        width:100%;
+    }
+    button:hover{
+        border:none;
+    }
+    /* button{
+        background-color:yellow;
+        border-radius:20px;
+        width:150px;
+    } */
+    .social{
+        position:absolute;
+        right:0;
+        display:flex;
+        justify-content:space-evenly;
+        flex-direction:column;
+        width:40px;
+        height:200px;
+        align-items:center;
+        background-color:white;
+
+    }
+    .social i:hover{
+        background-color:orange;
+        border-radius:20px;
+    }
+   #food1,#food2,#food3,#food4,#food5,#food6{
+    border-radius:40px;
+    margin-left:130px;
+
+   }
+</style>
+</head>
+<body>
+    <div class="top">
+        <div class="logo">BhairaviResto</div>
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">About</a>
+                <a href="#">Location</a>
+                <a href="#">Contact Us</a>
+            </div>
+        <div class="search">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bars"></i>
+            </div>7
+    </div>
+    <div class="heading">
+        <div class="left">
+            <p>Are You Hungry?</p>
+            <h1>Don't Wait</h1>
+            <p>let's start to order food now</p>
+           <a href="#menuitems"><button type="button"><span></span>checkout Menu</button></a>
+        </div>
+        <div class="right" id="food">
+          
+        </div>
+        <div class="social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-whatsapp"></i>
+        </div>
+    </div>
+    <div class="bottom">
+        <div id="menuitems">
+            <img src="https://imgs.search.brave.com/m91kHGGaF4FSmaa6H5DbDq6x8byazLc956yBnp3DP90/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ib3dsLWZyaWVk/LW5vb2RsZXMtd2l0/aC1waWxlLXBhcnNs/ZXktdG9wXzg5MzA1/NS04OC5qcGc_c2l6/ZT02MjYmZXh0PWpw/Zw" width=90 height="90" id="food1">
+            <img src="https://imgs.search.brave.com/QKpBttbo4czZU7zRKJhQpK7EHydMVPZPeOsLJHWHVfE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly95ZWxs/b3djaGlsaXMuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzA0L2NoZXBhbGEt/cHVsdXN1LXJlY2lw/ZS1uZWxsb3JlLWFu/ZGhyYS1maXNoLWN1/cnJ5LWZpc2gtcHVs/dXN1LXJlY2lwZS1p/bi5qcGc" width="90" height="90" id="food2">
+            <img src="https://imgs.search.brave.com/fu7CoEhFUpF5ndF0RuSjARoFSjkRmC1De-hCsInrdbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzUxLzA3LzI1/LzM2MF9GXzU1MTA3/MjU1OF9yRU51eDlm/cWxlYzVHUEJKU2FU/b1Q2OXhqY1lpR3hq/ZS5qcGc" width="90" height="90" id="food3">
+            <img src="https://imgs.search.brave.com/XqSJgq923B5j-Ue2fKYpSA6cGtPAn4Ok07CRgSlF-Uw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9vaG15/dmVnZ2llcy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MDEvTXVzaHJvb20t/Q3VycnktMTIwMHB4/LXNxdWFyZS5qcGc" width="90" height="90" id="food4">
+            <img src="/home/rguktongole/Downloads/mutton-curry.webp" width="90" height="90" id="food5">
+            
+        </div>
+    </div>
+    <script>
+        let food1=document.getElementById('food1');
+        let food2=document.getElementById('food2');
+        let food3=document.getElementById('food3');
+        let food4=document.getElementById('food4');
+     
+        
+        let food=document.getElementById('food');
+        food1.addEventListener('click',()=>{
+            food.style.backgroundImage="url('https://imgs.search.brave.com/m91kHGGaF4FSmaa6H5DbDq6x8byazLc956yBnp3DP90/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ib3dsLWZyaWVk/LW5vb2RsZXMtd2l0/aC1waWxlLXBhcnNs/ZXktdG9wXzg5MzA1/NS04OC5qcGc_c2l6/ZT02MjYmZXh0PWpw/Zw')"
+        });
+        food2.addEventListener('click',()=>{
+            food.style.backgroundImage="url('https://imgs.search.brave.com/QKpBttbo4czZU7zRKJhQpK7EHydMVPZPeOsLJHWHVfE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly95ZWxs/b3djaGlsaXMuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzA0L2NoZXBhbGEt/cHVsdXN1LXJlY2lw/ZS1uZWxsb3JlLWFu/ZGhyYS1maXNoLWN1/cnJ5LWZpc2gtcHVs/dXN1LXJlY2lwZS1p/bi5qcGc')"
+        });
+        food3.addEventListener('click',()=>{
+            food.style.backgroundImage="url('https://imgs.search.brave.com/fu7CoEhFUpF5ndF0RuSjARoFSjkRmC1De-hCsInrdbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzUxLzA3LzI1/LzM2MF9GXzU1MTA3/MjU1OF9yRU51eDlm/cWxlYzVHUEJKU2FU/b1Q2OXhqY1lpR3hq/ZS5qcGc')"
+        });
+        food4.addEventListener('click',()=>{
+            food.style.backgroundImage="url('https://imgs.search.brave.com/XqSJgq923B5j-Ue2fKYpSA6cGtPAn4Ok07CRgSlF-Uw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9vaG15/dmVnZ2llcy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MDEvTXVzaHJvb20t/Q3VycnktMTIwMHB4/LXNxdWFyZS5qcGc')"
+        });
+    </script>
+</body>
+</html>
